@@ -11,16 +11,37 @@ import * as XLSX from 'xlsx';
 export class DashboardComponent {
 
   districts: any[] = [];
-
+  activeLink: string="urban";
+  title = 'cmdarpan-dailySupplyUrban';
   constructor(private http: HttpClient) { }
+  setActiveLink(link: string): void {
+    this.activeLink = link;
+    if(this.activeLink=="rural")
+        this.loadData()
+    else
+      this.loadDataUrban()
+
+    
+  }
+
+  isLinkActive(link: string): boolean {
+    return this.activeLink === link;
+  }
+  
 
   ngOnInit() {
-    this.loadData();
+    this.loadDataUrban();
   }
 
   loadData() {
     // Replace 'data.json' with the path to your JSON file
     this.http.get<any[]>('./assets/data_dash.json').subscribe(data => {
+      this.districts = data;
+    });
+  }
+  loadDataUrban() {
+    // Replace 'data.json' with the path to your JSON file
+    this.http.get<any[]>('./assets/data_dash_urb.json').subscribe(data => {
       this.districts = data;
     });
   }

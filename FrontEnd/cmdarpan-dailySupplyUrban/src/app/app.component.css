@@ -1,0 +1,29 @@
+.nav-item {
+    border-left: 1px solid darkgray;
+  }
+  .img-head
+  {
+    padding-right: 20px;
+  }
+  .heading
+  {
+    font-size: 30px;
+    border-left: 1px solid darkgray;
+    padding-left: 20px;
+  }
+  
+  /* .nav-item:last-child {
+    border-right: none;
+  } */
+
+  .navbar-nav .nav-link {
+    font-size: 20px; /* Increase the font size to your desired value */
+  }
+  .nav-item.active .nav-link {
+    color: orange;
+  }
+
+
+
+
+  
