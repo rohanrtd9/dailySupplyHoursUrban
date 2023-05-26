@@ -1,0 +1,37 @@
+
+    <h2>{{ selectedDivision.Division }}</h2>
+  
+      <div class="row justify-content-center">
+        <div class="col-10">
+            <table class="table table-bordered table-striped col-sm-10">
+                <thead>
+                  <tr>
+                    <th>District Code</th>
+                    <th>District Name</th>
+                    <th>Scheduled Supply Hours</th>
+                    <th>Actual Supply Hours</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let district of selectedDivision.DistrictName; let i = index">
+                    <td>{{ selectedDivision.DistrictCode[i] }}</td>
+                    <td>{{ district }}</td>
+                    <td>{{ selectedDivision.ScheduledSupplyHours[i] }}</td>
+                    <td>
+                      <input type="number" [(ngModel)]="actualSupplyHours[i]" placeholder="Actual Supply Hour" class="form-control">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+      </div>
+      <button (click)="onSubmit()" class="btn btn-primary">Submit Data</button>
+
+
+
+
+
+  
+
+
+
