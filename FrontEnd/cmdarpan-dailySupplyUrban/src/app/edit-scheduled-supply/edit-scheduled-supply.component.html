@@ -1,0 +1,20 @@
+<p>edit-scheduled-supply works!</p>
+<div *ngFor="let zone of zones">
+    <h3>{{ zone.ZONE_NAME_UPPCL }}</h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>District</th>
+          <th>Urban Scheduled</th>
+          <th>Rural Scheduled</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let district of zone.DISTRICT_NAME_NIC; let i = index">
+          <td>{{ zone.DISTRICT_NAME_NIC[i] }}</td>
+          <td><input type="text" [value]="zone.URBAN_SCHEDULED[i]" /></td>
+        <td><input type="text" [value]="zone.RURAL_SCHEDULED[i]" /></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

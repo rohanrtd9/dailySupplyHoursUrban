@@ -1,200 +1,590 @@
 [
   {
-    "Division Code": 3,
+    "Division_Code": 3,
     "Division": "Agra",
-    "District Code": [118, 143, 166, 167],
-    "District Name": ["AGRA", "FIROZABAD", "MAINPURI", "MATHURA"],
-    "Scheduled Supply Hours": [23, 24, 22, 21],
+    "District_Code": [
+      118,
+      143,
+      166,
+      167
+    ],
+    "District_Name": [
+      "AGRA",
+      "FIROZABAD",
+      "MAINPURI",
+      "MATHURA"
+    ],
+    "Scheduled_Supply_Hours": [
+      23,
+      24,
+      22,
+      21
+    ],
     "Email": "agra@gmail.com",
-    "Phone No.": "9876543210",
+    "Phone_No.": "9876543210",
     "Username": "aguser",
-    "Password": "abc12345"
+    "Password": "abc12345",
+    "Scheduled_Supply_Hours_Rural": [
+      18,
+      23,
+      16,
+      16
+    ]
   },
   {
-    "Division Code": 18,
+    "Division_Code": 18,
     "Division": "Aligarh",
-    "District Code": [119, 138, 163, 633],
-    "District Name": ["ALIGARH", "ETAH", "HATHRAS", "Kasganj"],
-    "Scheduled Supply Hours": [24, 21, 23, 22],
+    "District_Code": [
+      119,
+      138,
+      163,
+      633
+    ],
+    "District_Name": [
+      "ALIGARH",
+      "ETAH",
+      "HATHRAS",
+      "Kasganj"
+    ],
+    "Scheduled_Supply_Hours": [
+      24,
+      21,
+      23,
+      22
+    ],
     "Email": "aligarh@gmail.com",
-    "Phone No.": "8765432109",
+    "Phone_No.": "8765432109",
     "Username": "aliguser",
-    "Password": "123abcde"
+    "Password": "123abcde",
+    "Scheduled_Supply_Hours_Rural": [
+      18,
+      17,
+      21,
+      22
+    ]
   },
   {
-    "Division Code": 7,
+    "Division_Code": 7,
     "Division": "Allahabad",
-    "District Code": [142, 158, 174, 120],
-    "District Name": ["FATEHPUR", "KAUSHAMBI", "PRATAPGARH", "PRAYAGRAJ"],
-    "Scheduled Supply Hours": [21, 23, 24, 22],
+    "District_Code": [
+      142,
+      158,
+      174,
+      120
+    ],
+    "District_Name": [
+      "FATEHPUR",
+      "KAUSHAMBI",
+      "PRATAPGARH",
+      "PRAYAGRAJ"
+    ],
+    "Scheduled_Supply_Hours": [
+      21,
+      23,
+      24,
+      22
+    ],
     "Email": "allahabad@gmail.com",
-    "Phone No.": "7654321098",
+    "Phone_No.": "7654321098",
     "Username": "alluser",
-    "Password": "qwerty12"
+    "Password": "qwerty12",
+    "Scheduled_Supply_Hours_Rural": [
+      16,
+      21,
+      23,
+      22
+    ]
   },
   {
-    "Division Code": 12,
+    "Division_Code": 12,
     "Division": "Azamgarh",
-    "District Code": [123, 126, 168],
-    "District Name": ["AZAMGARH", "BALLIA", "MAU"],
-    "Scheduled Supply Hours": [22, 24, 21],
+    "District_Code": [
+      123,
+      126,
+      168
+    ],
+    "District_Name": [
+      "AZAMGARH",
+      "BALLIA",
+      "MAU"
+    ],
+    "Scheduled_Supply_Hours": [
+      22,
+      24,
+      21
+    ],
     "Email": "azamgarh@gmail.com",
-    "Phone No.": "6543210987",
+    "Phone_No.": "6543210987",
     "Username": "azamuser",
-    "Password": "456qwert"
+    "Password": "456qwert",
+    "Scheduled_Supply_Hours_Rural": [
+      16,
+      18,
+      23
+    ]
   },
   {
-    "Division Code": 4,
+    "Division_Code": 4,
     "Division": "Bareilly",
-    "District Code": [130, 133, 173, 180],
-    "District Name": ["BAREILLY", "BUDAUN", "PILIBHIT", "SHAHJAHANPUR"],
-    "Scheduled Supply Hours": [23, 22, 21, 24],
+    "District_Code": [
+      130,
+      133,
+      173,
+      180
+    ],
+    "District_Name": [
+      "BAREILLY",
+      "BUDAUN",
+      "PILIBHIT",
+      "SHAHJAHANPUR"
+    ],
+    "Scheduled_Supply_Hours": [
+      23,
+      22,
+      21,
+      24
+    ],
     "Email": "bareilly@gmail.com",
-    "Phone No.": "5432109876",
+    "Phone_No.": "5432109876",
     "Username": "baruser",
-    "Password": "7890abcd"
+    "Password": "7890abcd",
+    "Scheduled_Supply_Hours_Rural": [
+      20,
+      18,
+      22,
+      22
+    ]
   },
   {
-    "Division Code": 14,
+    "Division_Code": 14,
     "Division": "Basti",
-    "District Code": [131, 178, 182],
-    "District Name": ["BASTI", "SANT KABEER NAGAR", "SIDDHARTH NAGAR"],
-    "Scheduled Supply Hours": [24, 21, 23],
+    "District_Code": [
+      131,
+      178,
+      182
+    ],
+    "District_Name": [
+      "BASTI",
+      "SANT KABEER NAGAR",
+      "SIDDHARTH NAGAR"
+    ],
+    "Scheduled_Supply_Hours": [
+      24,
+      21,
+      23
+    ],
     "Email": "basti@gmail.com",
-    "Phone No.": "4321098765",
+    "Phone_No.": "4321098765",
     "Username": "basuser",
-    "Password": "abcd1234"
+    "Password": "abcd1234",
+    "Scheduled_Supply_Hours_Rural": [
+      16,
+      20,
+      19
+    ]
   },
   {
-    "Division Code": 9,
+    "Division_Code": 9,
     "Division": "Chitrakoot",
-    "District Code": [128, 136, 149, 165],
-    "District Name": ["BANDA", "CHITRAKOOT", "HAMIRPUR", "MAHOBA"],
-    "Scheduled Supply Hours": [22, 24, 21, 23],
+    "District_Code": [
+      128,
+      136,
+      149,
+      165
+    ],
+    "District_Name": [
+      "BANDA",
+      "CHITRAKOOT",
+      "HAMIRPUR",
+      "MAHOBA"
+    ],
+    "Scheduled_Supply_Hours": [
+      22,
+      24,
+      21,
+      23
+    ],
     "Email": "chitrakoot@gmail.com",
-    "Phone No.": "3210987654",
+    "Phone_No.": "3210987654",
     "Username": "chituser",
-    "Password": "1234abcd"
+    "Password": "1234abcd",
+    "Scheduled_Supply_Hours_Rural": [
+      21,
+      23,
+      19,
+      20
+    ]
   },
   {
-    "Division Code": 16,
+    "Division_Code": 16,
     "Division": "Devipatan",
-    "District Code": [125, 127, 147, 181],
-    "District Name": ["BAHRAICH", "BALRAMPUR", "GONDA", "SHRAVASTI"],
-    "Scheduled Supply Hours": [21, 23, 24, 22],
+    "District_Code": [
+      125,
+      127,
+      147,
+      181
+    ],
+    "District_Name": [
+      "BAHRAICH",
+      "BALRAMPUR",
+      "GONDA",
+      "SHRAVASTI"
+    ],
+    "Scheduled_Supply_Hours": [
+      21,
+      23,
+      24,
+      22
+    ],
     "Email": "devipatan@gmail.com",
-    "Phone No.": "2109876543",
+    "Phone_No.": "2109876543",
     "Username": "devuser",
-    "Password": "abcd5678"
+    "Password": "abcd5678",
+    "Scheduled_Supply_Hours_Rural": [
+      22,
+      23,
+      17,
+      23
+    ]
   },
   {
-    "Division Code": 17,
+    "Division_Code": 17,
     "Division": "Faizabad",
-    "District Code": [121, 640, 140, 129, 185],
-    "District Name": ["AMBEDKAR NAGAR", "Amethi", "AYODHYA", "BARABANKI", "SULTANPUR"],
-    "Scheduled Supply Hours": [24, 22, 21, 23, 24],
+    "District_Code": [
+      121,
+      640,
+      140,
+      129,
+      185
+    ],
+    "District_Name": [
+      "AMBEDKAR NAGAR",
+      "Amethi",
+      "AYODHYA",
+      "BARABANKI",
+      "SULTANPUR"
+    ],
+    "Scheduled_Supply_Hours": [
+      24,
+      22,
+      21,
+      23,
+      24
+    ],
     "Email": "faizabad@gmail.com",
-    "Phone No.": "1098765432",
+    "Phone_No.": "1098765432",
     "Username": "faizuser",
-    "Password": "5678efgh"
+    "Password": "5678efgh",
+    "Scheduled_Supply_Hours_Rural": [
+      20,
+      21,
+      17,
+      17,
+      23
+    ]
   },
   {
-    "Division Code": 13,
+    "Division_Code": 13,
     "Division": "Gorakhpur",
-    "District Code": [137, 148, 160, 164],
-    "District Name": ["DEORIA", "GORAKHPUR", "KUSHI NAGAR", "MAHARAJGANJ"],
-    "Scheduled Supply Hours": [21, 23, 24, 22],
+    "District_Code": [
+      137,
+      148,
+      160,
+      164
+    ],
+    "District_Name": [
+      "DEORIA",
+      "GORAKHPUR",
+      "KUSHI NAGAR",
+      "MAHARAJGANJ"
+    ],
+    "Scheduled_Supply_Hours": [
+      21,
+      23,
+      24,
+      22
+    ],
     "Email": "gorakhpur@gmail.com",
-    "Phone No.": "987654321",
+    "Phone_No.": "987654321",
     "Username": "goruser",
-    "Password": "efgh1234"
+    "Password": "efgh1234",
+    "Scheduled_Supply_Hours_Rural": [
+      16,
+      22,
+      22,
+      22
+    ]
   },
   {
-    "Division Code": 8,
+    "Division_Code": 8,
     "Division": "Jhansi",
-    "District Code": [151, 153, 161],
-    "District Name": ["JALAUN", "JHANSI", "LALITPUR"],
-    "Scheduled Supply Hours": [23, 24, 21],
+    "District_Code": [
+      151,
+      153,
+      161
+    ],
+    "District_Name": [
+      "JALAUN",
+      "JHANSI",
+      "LALITPUR"
+    ],
+    "Scheduled_Supply_Hours": [
+      23,
+      24,
+      21
+    ],
     "Email": "jhansi@gmail.com",
-    "Phone No.": "9876543210",
+    "Phone_No.": "9876543210",
     "Username": "jhanuser",
-    "Password": "9012ijkl"
+    "Password": "9012ijkl",
+    "Scheduled_Supply_Hours_Rural": [
+      18,
+      21,
+      19
+    ]
   },
   {
-    "Division Code": 6,
+    "Division_Code": 6,
     "Division": "Kanpur",
-    "District Code": [122, 139, 141, 155, 156, 157],
-    "District Name": ["AURAIYA", "ETAWAH", "FARRUKHABAD", "KANNAUJ", "KANPUR DEHAT", "KANPUR NAGAR"],
-    "Scheduled Supply Hours": [22, 24, 23, 21, 23, 24],
+    "District_Code": [
+      122,
+      139,
+      141,
+      155,
+      156,
+      157
+    ],
+    "District_Name": [
+      "AURAIYA",
+      "ETAWAH",
+      "FARRUKHABAD",
+      "KANNAUJ",
+      "KANPUR DEHAT",
+      "KANPUR NAGAR"
+    ],
+    "Scheduled_Supply_Hours": [
+      22,
+      24,
+      23,
+      21,
+      23,
+      24
+    ],
     "Email": "kanpur@gmail.com",
-    "Phone No.": "8765432109",
+    "Phone_No.": "8765432109",
     "Username": "kanuser",
-    "Password": "ijkl5678"
+    "Password": "ijkl5678",
+    "Scheduled_Supply_Hours_Rural": [
+      19,
+      19,
+      21,
+      18,
+      23,
+      23
+    ]
   },
   {
-    "Division Code": 15,
+    "Division_Code": 15,
     "Division": "Lucknow",
-    "District Code": [150, 159, 162, 175, 183, 186],
-    "District Name": ["HARDOI", "KHERI", "LUCKNOW", "RAE BARELI", "SITAPUR", "UNNAO"],
-    "Scheduled Supply Hours": [24, 22, 21, 23, 21, 24],
+    "District_Code": [
+      150,
+      159,
+      162,
+      175,
+      183,
+      186
+    ],
+    "District_Name": [
+      "HARDOI",
+      "KHERI",
+      "LUCKNOW",
+      "RAE BARELI",
+      "SITAPUR",
+      "UNNAO"
+    ],
+    "Scheduled_Supply_Hours": [
+      24,
+      22,
+      21,
+      23,
+      21,
+      24
+    ],
     "Email": "lucknow@gmail.com",
-    "Phone No.": "7654321098",
+    "Phone_No.": "7654321098",
     "Username": "lucuser",
-    "Password": "3456mnop"
+    "Password": "3456mnop",
+    "Scheduled_Supply_Hours_Rural": [
+      23,
+      18,
+      22,
+      18,
+      18,
+      22
+    ]
   },
   {
-    "Division Code": 2,
+    "Division_Code": 2,
     "Division": "Meerut",
-    "District Code": [124, 134, 144, 145, 661, 169],
-    "District Name": ["BAGHPAT", "BULANDSHAHR", "GAUTAM BUDDHA NAGAR", "GHAZIABAD", "HAPUR", "MEERUT"],
-    "Scheduled Supply Hours": [23, 21, 24, 22, 21, 23],
+    "District_Code": [
+      124,
+      134,
+      144,
+      145,
+      661,
+      169
+    ],
+    "District_Name": [
+      "BAGHPAT",
+      "BULANDSHAHR",
+      "GAUTAM BUDDHA NAGAR",
+      "GHAZIABAD",
+      "HAPUR",
+      "MEERUT"
+    ],
+    "Scheduled_Supply_Hours": [
+      23,
+      21,
+      24,
+      22,
+      21,
+      23
+    ],
     "Email": "meerut@gmail.com",
-    "Phone No.": "6543210987",
+    "Phone_No.": "6543210987",
     "Username": "meeuruser",
-    "Password": "mnop7890"
+    "Password": "mnop7890",
+    "Scheduled_Supply_Hours_Rural": [
+      18,
+      22,
+      21,
+      17,
+      20,
+      16
+    ]
   },
   {
-    "Division Code": 11,
+    "Division_Code": 11,
     "Division": "Mirzapur",
-    "District Code": [179, 170, 184],
-    "District Name": ["BHADOHI", "MIRZAPUR", "SONBHADRA"],
-    "Scheduled Supply Hours": [22, 23, 24],
+    "District_Code": [
+      179,
+      170,
+      184
+    ],
+    "District_Name": [
+      "BHADOHI",
+      "MIRZAPUR",
+      "SONBHADRA"
+    ],
+    "Scheduled_Supply_Hours": [
+      22,
+      23,
+      24
+    ],
     "Email": "mirzapur@gmail.com",
-    "Phone No.": "5432109876",
+    "Phone_No.": "5432109876",
     "Username": "mirzuser",
-    "Password": "8901qrst"
+    "Password": "8901qrst",
+    "Scheduled_Supply_Hours_Rural": [
+      21,
+      20,
+      16
+    ]
   },
   {
-    "Division Code": 5,
+    "Division_Code": 5,
     "Division": "Moradabad",
-    "District Code": [154, 132, 171, 176, 659],
-    "District Name": ["AMROHA", "BIJNOR", "MORADABAD", "RAMPUR", "SAMBHAL"],
-    "Scheduled Supply Hours": [24, 22, 21, 23, 23],
+    "District_Code": [
+      154,
+      132,
+      171,
+      176,
+      659
+    ],
+    "District_Name": [
+      "AMROHA",
+      "BIJNOR",
+      "MORADABAD",
+      "RAMPUR",
+      "SAMBHAL"
+    ],
+    "Scheduled_Supply_Hours": [
+      24,
+      22,
+      21,
+      23,
+      23
+    ],
     "Email": "moradabad@gmail.com",
-    "Phone No.": "4321098765",
+    "Phone_No.": "4321098765",
     "Username": "moruser",
-    "Password": "qrst2345"
+    "Password": "qrst2345",
+    "Scheduled_Supply_Hours_Rural": [
+      17,
+      23,
+      17,
+      23,
+      19
+    ]
   },
   {
-    "Division Code": 1,
+    "Division_Code": 1,
     "Division": "Saharanpur",
-    "District Code": [172, 177, 660],
-    "District Name": ["MUZAFFARNAGAR", "SAHARANPUR", "SHAMLI"],
-    "Scheduled Supply Hours": [21, 24, 22],
+    "District_Code": [
+      172,
+      177,
+      660
+    ],
+    "District_Name": [
+      "MUZAFFARNAGAR",
+      "SAHARANPUR",
+      "SHAMLI"
+    ],
+    "Scheduled_Supply_Hours": [
+      21,
+      24,
+      22
+    ],
     "Email": "saharanpur@gmail.com",
-    "Phone No.": "3210987654",
+    "Phone_No.": "3210987654",
     "Username": "sahuser",
-    "Password": "2345uvwx"
+    "Password": "2345uvwx",
+    "Scheduled_Supply_Hours_Rural": [
+      19,
+      23,
+      19
+    ]
   },
   {
-    "Division Code": 10,
+    "Division_Code": 10,
     "Division": "Varanasi",
-    "District Code": [135, 146, 152, 187],
-    "District Name": ["CHANDAULI", "GHAZIPUR", "JAUNPUR", "VARANASI"],
-    "Scheduled Supply Hours": [23, 22, 21, 24],
+    "District_Code": [
+      135,
+      146,
+      152,
+      187
+    ],
+    "District_Name": [
+      "CHANDAULI",
+      "GHAZIPUR",
+      "JAUNPUR",
+      "VARANASI"
+    ],
+    "Scheduled_Supply_Hours": [
+      23,
+      22,
+      21,
+      24
+    ],
     "Email": "varanasi@gmail.com",
-    "Phone No.": "2109876543",
+    "Phone_No.": "2109876543",
     "Username": "varuser",
-    "Password": "uvwx6789"
+    "Password": "uvwx6789",
+    "Scheduled_Supply_Hours_Rural": [
+      18,
+      19,
+      22,
+      22
+    ]
   }
 ]

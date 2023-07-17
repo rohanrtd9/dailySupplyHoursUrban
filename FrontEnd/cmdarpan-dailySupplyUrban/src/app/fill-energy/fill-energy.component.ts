@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 interface Division {
   DivisionCode: number;
@@ -24,19 +25,40 @@ export class FillEnergyComponent implements OnInit {
     }
   ];
 
-  selectedDivision: Division = this.divisions[0];
-  actualSupplyHours: number[] = [];
-
-  ngOnInit(): void {
-    this.initializeActualSupplyHours();
+  selectedDivision: any;
+  urbanGivenSupplyHours: number[] = [];
+  ruralGivenSupplyHours: number[] = [];
+  urbanSupplyHoursFilled: boolean = false;
+  ruralSupplyHoursFilled: boolean = false;
+  constructor(private dataService: DataService) { 
+    
+    
   }
-
+  async ngOnInit(): Promise<void> {
+    try {
+      
+      this.selectedDivision = (await this.dataService.fetchData("0000010105"))[0];
+      console.log(this.selectedDivision);
+      this.initializeActualSupplyHours();
+      // Update any other UI-related properties or perform additional logic
+    } catch (error) {
+      console.error('Error fetching data:', error);
+      // Handle the error, e.g., show an error message or fallback UI
+    }
+    
+    
+  }
+  checkValidation(): void {
+    this.urbanSupplyHoursFilled = this.urbanGivenSupplyHours.every(hours => hours !== null && hours !== undefined && hours >= 0 && hours <= 24);
+    this.ruralSupplyHoursFilled = this.ruralGivenSupplyHours.every(hours => hours !== null && hours !== undefined && hours >= 0 && hours <= 24);
+  }
   initializeActualSupplyHours(): void {
-    this.actualSupplyHours = new Array(this.selectedDivision.DistrictCode.length).fill(0);
+    this.urbanGivenSupplyHours = new Array(this.selectedDivision?.DISTRICT_CODE_NIC.length).fill(null);
+    this.ruralGivenSupplyHours = new Array(this.selectedDivision?.DISTRICT_CODE_NIC.length).fill(null);
   }
 
   onSubmit(): void {
     // Here, you can submit the actual supply hours data to your desired destination
-    console.log(this.actualSupplyHours);
+    console.log(this.selectedDivision);
   }
 }

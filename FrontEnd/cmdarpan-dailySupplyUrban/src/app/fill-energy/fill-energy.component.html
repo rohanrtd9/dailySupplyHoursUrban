@@ -1,40 +1,50 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between" >
-  <a class="navbar-brand" ><img src="../assets/logo.png" class="img-head"> <span class="heading">District wise supply status on 18 May 2023</span></a>  
+<nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
+  <a class="navbar-brand"><img src="../assets/logo.png" class="img-head"> <span class="heading">District wise supply status on 18 May 2023</span></a>
 </nav>
-
-    <h2>{{ selectedDivision.Division }}</h2>
-  
-      <div class="row justify-content-center">
-        <div class="col-10">
+<div class="container-fluid">
+  <div class="row justify-content-center mt-5">
+    <div class="card col-11 p-0">
+      <div class="card-header">
+        <h4>{{ selectedDivision?.ZONE_NAME_UPPCL }}</h4>
+      </div>
+      <div class="card-body">
+       
+        <div class="row justify-content-center">
+          <div class="col-12">
             <table class="table table-bordered table-striped col-sm-10">
-                <thead>
-                  <tr>
-                    <th>District Code</th>
-                    <th>District Name</th>
-                    <th>Scheduled Supply Hours</th>
-                    <th>Actual Supply Hours</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr *ngFor="let district of selectedDivision.DistrictName; let i = index">
-                    <td>{{ selectedDivision.DistrictCode[i] }}</td>
-                    <td>{{ district }}</td>
-                    <td>{{ selectedDivision.ScheduledSupplyHours[i] }}</td>
-                    <td>
-                      <input type="number" [(ngModel)]="actualSupplyHours[i]" placeholder="Actual Supply Hour" class="form-control">
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+              <thead>
+                <tr>
+                  <th>District Name</th>
+                  <th>Urban Scheduled Supply Hours</th>
+                  <th>Urban Given Supply Hours</th>
+                  <th>Rural Scheduled Supply Hours</th>
+                  <th>Rural Given Supply Hours</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let district of selectedDivision?.DISTRICT_NAME_NIC; let i = index">
+                  <td>{{ district }}</td>
+                  <td>{{ selectedDivision.URBAN_SCHEDULED[i]  }}</td>
+                  <td>
+                    <input type="number" [(ngModel)]="urbanGivenSupplyHours[i]" placeholder="Urban Given Supply Hours" class="form-control" required (input)="checkValidation() " [ngClass]="{'is-invalid': urbanGivenSupplyHours[i] < 0 || urbanGivenSupplyHours[i] > 24}">
+                    <small class="text-danger" *ngIf="urbanGivenSupplyHours[i] < 0 || urbanGivenSupplyHours[i] > 24">Daily supplied hours should be between 0 and 24</small>
+                  </td>
+                  <td>{{ selectedDivision.RURAL_SCHEDULED[i] }}</td>
+                  <td>
+                    <input type="number" [(ngModel)]="ruralGivenSupplyHours[i]" placeholder="Rural Given Supply Hours" class="form-control" required (input)="checkValidation()" [ngClass]="{'is-invalid': ruralGivenSupplyHours[i] < 0 || ruralGivenSupplyHours[i] > 24}">
+                    <small class="text-danger" *ngIf="ruralGivenSupplyHours[i] < 0 || ruralGivenSupplyHours[i] > 24">Daily supplied hours should be between 0 and 24</small>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
-      <button (click)="onSubmit()" class="btn btn-primary">Submit Data</button>
-
-
-
-
-
+      <div class="card-footer">
+        <button (click)="onSubmit()" class="btn btn-primary" [disabled]="!urbanSupplyHoursFilled || !ruralSupplyHoursFilled">{{ !urbanSupplyHoursFilled || !ruralSupplyHoursFilled ? 'Fill Data' : 'Submit Data' }}</button>
+      </div>
+    </div>
+  </div>
   
-
-
-
+  
+</div>
